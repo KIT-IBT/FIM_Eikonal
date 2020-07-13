@@ -556,12 +556,29 @@ std::vector < std::vector < float > >  meshFIM3dEikonal::GenerateData(size_t max
     printf("The iteration number: %d\n", nTotalIter);
     printf("The total iteration number: %d\n", totalIterationNumber);
   }
+  
   cudaSafeCall(cudaFree(d_con));
-  cudaSafeCall(cudaFree(d_blockCon));
+  cudaSafeCall(cudaFree(d_tetMem0));
+  cudaSafeCall(cudaFree(d_tetMem1));
+  cudaSafeCall(cudaFree(d_tetT));
+  cudaSafeCall(cudaFree(d_vertT));
+  cudaSafeCall(cudaFree(d_speedInv));
+  cudaSafeCall(cudaFree(d_vertMem));
+  cudaSafeCall(cudaFree(d_vertMemOutside));
   cudaSafeCall(cudaFree(d_BlockSizes));
-
+  cudaSafeCall(cudaFree(d_blockCon));
+  cudaSafeCall(cudaFree(d_ActiveList));
+  
+  free(h_tetMem0);
+  free(h_tetMem1);
+  free(h_tetT);
+  free(h_vertT);
+  free(h_vertMem);
+  free(h_vertMemOutside);
   free(h_blockCon);
+  free(h_BlockLabel);
   free(h_BlockSizes);
+  
   return result;
 }
 

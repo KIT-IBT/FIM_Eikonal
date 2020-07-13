@@ -6,6 +6,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 endif()
 
 SET(BUILD_EXAMPLES false CACHE BOOL "Build sample executables")
+SET(BUILD_TESTING false CACHE BOOL "Build testing")
 
 find_package(CUDA REQUIRED)
 
