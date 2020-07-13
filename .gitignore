@@ -1,0 +1,6 @@
+msvc
+build
+Debug
+Release
+~*
+*.swp
