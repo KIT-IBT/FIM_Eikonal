@@ -1,5 +1,6 @@
 #!/bin/bash
 
+var=$(hostname)
 if [ ${var:0:4} == 'uc2n' ]; then
     # we are on bwUniCluster2
     module load compiler/clang/8.0
