@@ -31,7 +31,9 @@ tetFIM -i inFile.vtu -p seedsFile.txt -o outFile.txt {additional options}
 
 * Cell data arrays 'Phi' and 'Theta' containing angles in radian are required in the VTK dataset for anisotropy != 1.
 
-* A cell data array 'Speed' may be provided in the VTK dataset to define different speeds for each tetrahedron.
+* Cell data arrays 'Speed' and/or 'Anisotropy' may be provided in the VTK dataset to define different speeds / anisotropy ratios for each tetrahedron.
+
+* The speed is defined with respect to the transversal direction, i.e. the effective speed in fiber direction is anisotropy * speed.
 
 * Try to reduce maxVertsPerBlock if you get 'cudaCheckError() : invalid configuration argument'.
   This parameter determines maxNumTotalTets, which must be smaller than the max number of threads per block for your CUDA device (usually 512 or 1024).
