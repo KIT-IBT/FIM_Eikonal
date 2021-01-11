@@ -3,8 +3,8 @@
 var=$(hostname)
 if [ ${var:0:4} == 'uc2n' ]; then
     # we are on bwUniCluster2
-    module load compiler/clang/8.0
-    module load devel/cuda
+    module load compiler/clang
+    module load devel/cuda/11.0
     module load devel/cmake
 fi
 
