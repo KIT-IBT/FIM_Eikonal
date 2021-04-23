@@ -20,7 +20,7 @@ tetFIM -i inFile.vtu -p seedsFile.txt -o outFile.txt {additional options}
 -o  or -outFile             .bin or .txt
 -a  or -anisotropy          default: 1.0
 -s  or -speed               default: 1.0
--m  or -maxIterations       default: 500
+-m  or -maxIterations       default: 2000
 -b  or -maxBlocks           default: 16
 -vb or -maxVertsPerBlock    default: 24
 -v  or -verbose
