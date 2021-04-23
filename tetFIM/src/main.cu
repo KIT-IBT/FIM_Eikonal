@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     bool speedProvided = false;
     int maxBlocks = 16;
     int maxVertsPerBlock = 24;
-    int maxIterations = 500;
+    int maxIterations = 2000;
     
     for(int i = 0; i < argc; i++)
     {
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
             std::cout << "  -o  or -outFile             .bin or .txt" << std::endl;
             std::cout << "  -a  or -anisotropy          default: 1.0" << std::endl;
             std::cout << "  -s  or -speed               default: 1.0" << std::endl;
-            std::cout << "  -m  or -maxIterations       default: 500" << std::endl;
+            std::cout << "  -m  or -maxIterations       default: 2000" << std::endl;
             std::cout << "  -b  or -maxBlocks           default: 16" << std::endl;
             std::cout << "  -vb or -maxVertsPerBlock    default: 24" << std::endl;
             std::cout << "  -v  or -verbose" << std::endl;
