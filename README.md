@@ -1,5 +1,5 @@
 # FIM_Eikonal
-Extension of SCI-Solver_Eikonal for simulation of anisotropic wavefront propagation in the heart.  
+Extension of SCI-Solver_Eikonal by Fu et al. for simulation of anisotropic wavefront propagation in the heart. See `SCI-Solver_Eikonal/README.md` for a description of the Fast Iterative Method, references to the detailed papers, and author information for the original code.
 
 tetFIM uses the fast iterative method (FIM) on tetrahedral meshes to solve the anisotropic eikonal equation  
 <img src="https://render.githubusercontent.com/render/math?math=\sqrt{(\nabla t)^T \mathbf{M} (\nabla t)} = 1">  
